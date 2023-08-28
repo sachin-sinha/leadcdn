@@ -1,13 +1,16 @@
 
 // Array of form IDs to target
-const formIdsToTarget = [ "form-register" ];
+const formIdsToTarget = [  ];
 
 // Function to collect form data and create objects
 function collectFormData(event) {
   event.preventDefault(); // Prevent form submission
   
   const formData = new FormData(event.target);
-  const formObject = {};
+  const formObject = {
+    FormId: event.target.id,
+    Website: window.location.href
+  };
   
   formData.forEach((value, key) => {
     formObject[key] = value;
