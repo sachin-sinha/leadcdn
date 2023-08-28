@@ -1,6 +1,6 @@
 
   // Array of form IDs to target
-  const formIdsToTarget = ['form1', 'form2', 'form3'];
+  const formIdsToTarget = [ form-login ];
   
   // Function to collect form data and create objects
   function collectFormData(event) {
@@ -13,11 +13,11 @@
       formObject[key] = value;
     });
 
-    fetch('undefined', {
+    fetch('API_ENDPOINT', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-bang-api-key': 'undefined'
+        'x-bang-api-key': 'API_KEY'
       },
       body: JSON.stringify(formObject)
     })
