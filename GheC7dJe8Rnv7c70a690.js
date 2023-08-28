@@ -1,6 +1,6 @@
 
   // Array of form IDs to target
-  const formIdsToTarget = [ "form-login", "form-register", "newForm" ];
+  const formIdsToTarget = [ "form-login", "form-register" ];
   
   // Function to collect form data and create objects
   function collectFormData(event) {
