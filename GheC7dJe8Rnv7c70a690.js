@@ -1,6 +1,6 @@
 
 // Array of form IDs to target
-const formIdsToTarget = [ "form-currency" ];
+const formIdsToTarget = [  ];
 
 // Function to collect form data and create objects
 function collectFormData(event) {
